@@ -3,16 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "export": "next export",
+  "deploy": "next build && next export && gh-pages -d out"
+}
+
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "next": "15.3.0"
   },
+"homepage": "https://dustin-holloway.github.io/streamline-av-site"
+
+
+
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "tailwindcss": "^4",
